@@ -47,13 +47,13 @@
                 "height": 100
               },
               "position": {
-                "x": 449,
-                "y": 180
+                "x": 410,
+                "y": 188
               },
               "angle": 0,
               "id": "685b5e05-705a-4548-81c6-125e74f4fc85",
               "z": 2,
-              "hasOpenThreats": true,
+              "hasOpenThreats": false,
               "threats": [
                 {
                   "ruleId": "b2a6d40d-d3f8-4750-8e4d-c02cc84b13dc",
@@ -72,7 +72,7 @@
                   "type": "Information disclosure",
                   "modelType": "STRIDE",
                   "status": "Mitigated",
-                  "severity": "Medium",
+                  "severity": "High",
                   "description": "SQL-Injection: can read login credentials",
                   "mitigation": "Prepared Statements in source Code",
                   "threatId": "ee1fef8d-7ca2-493c-9446-f38b99fc6ce7"
@@ -83,7 +83,7 @@
                   "type": "Denial of service",
                   "modelType": "STRIDE",
                   "status": "Mitigated",
-                  "severity": "Medium",
+                  "severity": "High",
                   "description": "DDoS",
                   "mitigation": "Limit network broadcasting (load)",
                   "threatId": "ba3977dd-914e-445d-bd40-ef2fe25b3c5f"
@@ -93,22 +93,22 @@
                   "title": "Generic elevation threat",
                   "type": "Elevation of privilege",
                   "modelType": "STRIDE",
-                  "status": "Open",
-                  "severity": "Medium",
-                  "description": "A generic elevation of privileges threat",
-                  "mitigation": "Mitigation or prevention for the threat",
+                  "status": "Mitigated",
+                  "severity": "High",
+                  "description": "XSRF",
+                  "mitigation": "set a SFR Token",
                   "threatId": "5a5d6eae-028e-49cf-903f-f210f1dad72b"
                 }
               ],
               "attrs": {
                 ".element-shape": {
-                  "class": "element-shape hasOpenThreats isInScope"
+                  "class": "element-shape hasNoOpenThreats isInScope"
                 },
                 "text": {
                   "text": "Login System"
                 },
                 ".element-text": {
-                  "class": "element-text hasOpenThreats isInScope"
+                  "class": "element-text hasNoOpenThreats isInScope"
                 }
               }
             },
@@ -151,8 +151,8 @@
               "labels": [
                 {
                   "position": {
-                    "distance": 0.544571244274612,
-                    "offset": 0.6796133599283539
+                    "distance": 0.532928380320145,
+                    "offset": 0.3982831610234809
                   },
                   "attrs": {
                     "text": {
@@ -173,7 +173,7 @@
                   "type": "Denial of service",
                   "modelType": "STRIDE",
                   "status": "Mitigated",
-                  "severity": "Medium",
+                  "severity": "High",
                   "description": "Botnet: DDoS",
                   "mitigation": "Limit network broadcasting (load)",
                   "threatId": "91ea1358-88ed-4311-b34c-3b05b39eb8b8"
@@ -274,13 +274,13 @@
                 "height": 80
               },
               "position": {
-                "x": 661,
-                "y": 12
+                "x": 606,
+                "y": 27
               },
               "angle": 0,
               "id": "eedf90b7-2ad8-4ac8-9da3-9ce85c06978e",
               "z": 9,
-              "hasOpenThreats": true,
+              "hasOpenThreats": false,
               "description": "",
               "threats": [
                 {
@@ -288,10 +288,10 @@
                   "title": "Generic tampering threat",
                   "type": "Tampering",
                   "modelType": "STRIDE",
-                  "status": "Open",
+                  "status": "Mitigated",
                   "severity": "Medium",
-                  "description": "A generic tampering threat",
-                  "mitigation": "Mitigation or prevention for the threat",
+                  "description": "run script in log file",
+                  "mitigation": "Escape Character and make sure it s only a string saved in the log-file",
                   "threatId": "0999177c-3f2f-4308-aee6-795f8ba8eee8"
                 },
                 {
@@ -299,33 +299,22 @@
                   "title": "Generic information disclosure threat",
                   "type": "Information disclosure",
                   "modelType": "STRIDE",
-                  "status": "Open",
-                  "severity": "Medium",
-                  "description": "A generic information disclosure threat",
-                  "mitigation": "Mitigation or prevention for the threat",
+                  "status": "Mitigated",
+                  "severity": "High",
+                  "description": "read data via script",
+                  "mitigation": "Escape Character and make sure it s only a string saved in the log-file",
                   "threatId": "a3ee940a-e8c9-4465-a978-05c107f94fdc"
-                },
-                {
-                  "ruleId": "edb05d76-a695-455f-947b-7d67b78bc31d",
-                  "title": "Generic DoS threat",
-                  "type": "Denial of service",
-                  "modelType": "STRIDE",
-                  "status": "Open",
-                  "severity": "Medium",
-                  "description": "A generic DoS threat",
-                  "mitigation": "Mitigation or prevention for the threat",
-                  "threatId": "a506a7f9-c23a-4710-ada0-2cae4dd6f5bb"
                 }
               ],
               "attrs": {
                 ".element-shape": {
-                  "class": "element-shape hasOpenThreats isInScope"
+                  "class": "element-shape hasNoOpenThreats isInScope"
                 },
                 "text": {
                   "text": "Log-Database"
                 },
                 ".element-text": {
-                  "class": "element-text hasOpenThreats isInScope"
+                  "class": "element-text hasNoOpenThreats isInScope"
                 }
               }
             },
@@ -340,12 +329,12 @@
                 "id": "eedf90b7-2ad8-4ac8-9da3-9ce85c06978e"
               },
               "target": {
-                "id": "c11ece4f-1739-4d8a-9cdd-a1494d5b7796"
+                "id": "5281bde4-dfcc-47a5-a0a1-bdfa39bb5e7b"
               },
               "vertices": [
                 {
-                  "x": 703,
-                  "y": 145
+                  "x": 705,
+                  "y": 148
                 }
               ],
               "id": "dcea2856-542a-4764-9f31-a88f78f07a06",
@@ -362,26 +351,26 @@
                 }
               ],
               "z": 10,
-              "hasOpenThreats": true,
+              "hasOpenThreats": false,
               "threats": [
                 {
                   "ruleId": "13000296-b17d-4b72-9cc4-f5cc33f80e4c",
                   "title": "Generic information disclosure threat",
                   "type": "Information disclosure",
                   "modelType": "STRIDE",
-                  "status": "Open",
-                  "severity": "Medium",
-                  "description": "A generic information disclosure threat",
-                  "mitigation": "Mitigation or prevention for the threat",
+                  "status": "Mitigated",
+                  "severity": "High",
+                  "description": "read Data via run script",
+                  "mitigation": "Escape Character and make sure it s only a string saved in the log-file",
                   "threatId": "72857302-4852-4549-a45f-6266542a62eb"
                 }
               ],
               "attrs": {
                 ".marker-target": {
-                  "class": "marker-target hasOpenThreats isInScope"
+                  "class": "marker-target hasNoOpenThreats isInScope"
                 },
                 ".connection": {
-                  "class": "connection hasOpenThreats isInScope"
+                  "class": "connection hasNoOpenThreats isInScope"
                 }
               }
             },
@@ -392,79 +381,35 @@
                 "height": 100
               },
               "position": {
-                "x": 704,
-                "y": 173
+                "x": 683,
+                "y": 380
               },
               "angle": 0,
               "id": "c11ece4f-1739-4d8a-9cdd-a1494d5b7796",
               "z": 11,
-              "hasOpenThreats": true,
+              "hasOpenThreats": false,
               "threats": [
-                {
-                  "ruleId": "b2a6d40d-d3f8-4750-8e4d-c02cc84b13dc",
-                  "title": "Generic spoofing threat",
-                  "type": "Spoofing",
-                  "modelType": "STRIDE",
-                  "status": "Open",
-                  "severity": "Medium",
-                  "description": "A generic spoofing threat",
-                  "mitigation": "Mitigation or prevention for the threat",
-                  "threatId": "900301ca-8b61-418b-892e-dafb0473c96a"
-                },
-                {
-                  "ruleId": "13000296-b17d-4b72-9cc4-f5cc33f80e4c",
-                  "title": "Generic information disclosure threat",
-                  "type": "Information disclosure",
-                  "modelType": "STRIDE",
-                  "status": "Open",
-                  "severity": "Medium",
-                  "description": "A generic information disclosure threat",
-                  "mitigation": "Mitigation or prevention for the threat",
-                  "threatId": "2bffea49-0dd2-4d9d-a191-4f8a45d676a5"
-                },
                 {
                   "ruleId": "edb05d76-a695-455f-947b-7d67b78bc31d",
                   "title": "Generic DoS threat",
                   "type": "Denial of service",
                   "modelType": "STRIDE",
-                  "status": "Open",
-                  "severity": "Medium",
-                  "description": "A generic DoS threat",
-                  "mitigation": "Mitigation or prevention for the threat",
+                  "status": "Mitigated",
+                  "severity": "High",
+                  "description": "DDos : no redundancy",
+                  "mitigation": "add server (redundancy)\nset network limit",
                   "threatId": "54b5fadc-e9d1-4b81-ba4d-6d0a7840d703"
-                },
-                {
-                  "ruleId": "c1377855-ea20-4c97-8861-f95c364fb8d2",
-                  "title": "Generic elevation threat",
-                  "type": "Elevation of privilege",
-                  "modelType": "STRIDE",
-                  "status": "Open",
-                  "severity": "Medium",
-                  "description": "A generic elevation of privileges threat",
-                  "mitigation": "Mitigation or prevention for the threat",
-                  "threatId": "e17de719-e7f5-4f50-9e7f-8f2364167bdd"
-                },
-                {
-                  "ruleId": "4adaa48a-0345-4533-a189-64c98c4420dd",
-                  "title": "Generic tampering threat",
-                  "type": "Tampering",
-                  "modelType": "STRIDE",
-                  "status": "Open",
-                  "severity": "Medium",
-                  "description": "A generic tampering threat",
-                  "mitigation": "Mitigation or prevention for the threat",
-                  "threatId": "ef04fd6d-3192-4b36-a01d-aeaa268a7ec3"
                 }
               ],
               "attrs": {
                 ".element-shape": {
-                  "class": "element-shape hasOpenThreats isInScope"
+                  "class": "element-shape hasNoOpenThreats isInScope"
                 },
                 "text": {
                   "text": "2-Faktor-Authe\nntifizierung"
                 },
                 ".element-text": {
-                  "class": "element-text hasOpenThreats isInScope"
+                  "class": "element-text hasNoOpenThreats isInScope"
                 }
               }
             },
@@ -531,13 +476,12 @@
                 "id": "685b5e05-705a-4548-81c6-125e74f4fc85"
               },
               "target": {
-                "x": 705,
-                "y": 197
+                "id": "c11ece4f-1739-4d8a-9cdd-a1494d5b7796"
               },
               "vertices": [
                 {
-                  "x": 620,
-                  "y": 177
+                  "x": 596,
+                  "y": 313
                 }
               ],
               "id": "07ab2ff8-c411-473a-b390-552c39a02b08",
@@ -557,38 +501,27 @@
                 }
               ],
               "z": 13,
-              "hasOpenThreats": true,
+              "hasOpenThreats": false,
               "description": "credentials\nand\nMessage",
               "threats": [
-                {
-                  "ruleId": "13000296-b17d-4b72-9cc4-f5cc33f80e4c",
-                  "title": "Generic information disclosure threat",
-                  "type": "Information disclosure",
-                  "modelType": "STRIDE",
-                  "status": "Open",
-                  "severity": "Medium",
-                  "description": "A generic information disclosure threat",
-                  "mitigation": "Mitigation or prevention for the threat",
-                  "threatId": "bd70c3cc-9c34-466b-b0c3-62a2bbad7cff"
-                },
                 {
                   "ruleId": "edb05d76-a695-455f-947b-7d67b78bc31d",
                   "title": "Generic DoS threat",
                   "type": "Denial of service",
                   "modelType": "STRIDE",
-                  "status": "Open",
-                  "severity": "Medium",
-                  "description": "A generic DoS threat",
-                  "mitigation": "Mitigation or prevention for the threat",
+                  "status": "Mitigated",
+                  "severity": "High",
+                  "description": "Botnet: DDos",
+                  "mitigation": "limit network load",
                   "threatId": "f8e4e8fd-6375-4983-a9cb-7b09707a6282"
                 }
               ],
               "attrs": {
                 ".marker-target": {
-                  "class": "marker-target hasOpenThreats isInScope"
+                  "class": "marker-target hasNoOpenThreats isInScope"
                 },
                 ".connection": {
-                  "class": "connection hasOpenThreats isInScope"
+                  "class": "connection hasNoOpenThreats isInScope"
                 }
               }
             },
@@ -603,13 +536,16 @@
                 "id": "c11ece4f-1739-4d8a-9cdd-a1494d5b7796"
               },
               "target": {
-                "x": 553,
-                "y": 245
+                "id": "685b5e05-705a-4548-81c6-125e74f4fc85"
               },
               "vertices": [
                 {
-                  "x": 627,
-                  "y": 261
+                  "x": 586,
+                  "y": 427
+                },
+                {
+                  "x": 556,
+                  "y": 414
                 }
               ],
               "id": "c55e137e-4513-4a3c-bdf7-6be9e839f187",
@@ -629,27 +565,15 @@
                 }
               ],
               "z": 14,
-              "hasOpenThreats": true,
+              "hasOpenThreats": false,
               "description": "One Time Token transfer",
-              "threats": [
-                {
-                  "ruleId": "13000296-b17d-4b72-9cc4-f5cc33f80e4c",
-                  "title": "Generic information disclosure threat",
-                  "type": "Information disclosure",
-                  "modelType": "STRIDE",
-                  "status": "Open",
-                  "severity": "Medium",
-                  "description": "A generic information disclosure threat",
-                  "mitigation": "Mitigation or prevention for the threat",
-                  "threatId": "2c479995-ff47-4881-97e7-17cccc52a65d"
-                }
-              ],
+              "threats": [],
               "attrs": {
                 ".marker-target": {
-                  "class": "marker-target hasOpenThreats isInScope"
+                  "class": "marker-target hasNoOpenThreats isInScope"
                 },
                 ".connection": {
-                  "class": "connection hasOpenThreats isInScope"
+                  "class": "connection hasNoOpenThreats isInScope"
                 }
               }
             },
@@ -660,8 +584,8 @@
                 "height": 100
               },
               "position": {
-                "x": 711,
-                "y": 712
+                "x": 681,
+                "y": 578
               },
               "angle": 0,
               "id": "5d93d1bf-ebf8-40a6-b6ac-458bff7d66a2",
@@ -818,21 +742,25 @@
               },
               "smooth": true,
               "source": {
-                "x": 865,
+                "x": 709,
                 "y": 1
               },
               "target": {
-                "x": 864,
+                "x": 697,
                 "y": 1
               },
               "vertices": [
+                {
+                  "x": 855,
+                  "y": 59
+                },
                 {
                   "x": 869,
                   "y": 273
                 },
                 {
-                  "x": 686,
-                  "y": 334
+                  "x": 920,
+                  "y": 1017
                 },
                 {
                   "x": 377,
@@ -1101,60 +1029,8 @@
                 "height": 100
               },
               "position": {
-                "x": 1256,
-                "y": 563
-              },
-              "angle": 0,
-              "id": "bc01c5b4-2e84-49d0-b23f-120b5e592f0f",
-              "z": 35,
-              "hasOpenThreats": false,
-              "attrs": {
-                ".element-shape": {
-                  "class": "element-shape hasNoOpenThreats isInScope"
-                },
-                "text": {
-                  "text": "Google Voice"
-                },
-                ".element-text": {
-                  "class": "element-text hasNoOpenThreats isInScope"
-                }
-              }
-            },
-            {
-              "type": "tm.Process",
-              "size": {
-                "width": 100,
-                "height": 100
-              },
-              "position": {
-                "x": 1246,
-                "y": 709
-              },
-              "angle": 0,
-              "id": "26c02d8f-2d4d-4615-8bd1-2b37800aba8d",
-              "z": 36,
-              "hasOpenThreats": false,
-              "attrs": {
-                ".element-shape": {
-                  "class": "element-shape hasNoOpenThreats isInScope"
-                },
-                "text": {
-                  "text": "IMessage"
-                },
-                ".element-text": {
-                  "class": "element-text hasNoOpenThreats isInScope"
-                }
-              }
-            },
-            {
-              "type": "tm.Process",
-              "size": {
-                "width": 100,
-                "height": 100
-              },
-              "position": {
-                "x": 1250,
-                "y": 884
+                "x": 809,
+                "y": 826
               },
               "angle": 0,
               "id": "7b127dca-1f67-42b6-bcd4-6972c55aa6b0",
@@ -1184,93 +1060,12 @@
                 "id": "5d93d1bf-ebf8-40a6-b6ac-458bff7d66a2"
               },
               "target": {
-                "id": "bc01c5b4-2e84-49d0-b23f-120b5e592f0f"
-              },
-              "vertices": [
-                {
-                  "x": 988,
-                  "y": 610
-                }
-              ],
-              "id": "48d27ad2-29b5-4f27-b88f-f3ddd978ba27",
-              "labels": [
-                {
-                  "position": 0.5,
-                  "attrs": {
-                    "text": {
-                      "text": "flow 25",
-                      "font-weight": "400",
-                      "font-size": "small"
-                    }
-                  }
-                }
-              ],
-              "z": 38,
-              "hasOpenThreats": false,
-              "attrs": {
-                ".marker-target": {
-                  "class": "marker-target hasNoOpenThreats isInScope"
-                },
-                ".connection": {
-                  "class": "connection hasNoOpenThreats isInScope"
-                }
-              }
-            },
-            {
-              "type": "tm.Flow",
-              "size": {
-                "width": 10,
-                "height": 10
-              },
-              "smooth": true,
-              "source": {
-                "id": "5d93d1bf-ebf8-40a6-b6ac-458bff7d66a2"
-              },
-              "target": {
-                "id": "26c02d8f-2d4d-4615-8bd1-2b37800aba8d"
-              },
-              "vertices": [],
-              "id": "6078ae71-1e3b-43a3-a5b2-8beddf038d9a",
-              "labels": [
-                {
-                  "position": 0.5,
-                  "attrs": {
-                    "text": {
-                      "text": "flow 26",
-                      "font-weight": "400",
-                      "font-size": "small"
-                    }
-                  }
-                }
-              ],
-              "z": 39,
-              "hasOpenThreats": false,
-              "attrs": {
-                ".marker-target": {
-                  "class": "marker-target hasNoOpenThreats isInScope"
-                },
-                ".connection": {
-                  "class": "connection hasNoOpenThreats isInScope"
-                }
-              }
-            },
-            {
-              "type": "tm.Flow",
-              "size": {
-                "width": 10,
-                "height": 10
-              },
-              "smooth": true,
-              "source": {
-                "id": "5d93d1bf-ebf8-40a6-b6ac-458bff7d66a2"
-              },
-              "target": {
                 "id": "7b127dca-1f67-42b6-bcd4-6972c55aa6b0"
               },
               "vertices": [
                 {
-                  "x": 1018,
-                  "y": 950
+                  "x": 812,
+                  "y": 794
                 }
               ],
               "id": "641bbf94-5d8c-4fcb-b11c-6d0ef56cc75c",
@@ -1298,57 +1093,99 @@
               }
             },
             {
-              "type": "tm.Boundary",
+              "type": "tm.Flow",
               "size": {
                 "width": 10,
                 "height": 10
               },
               "smooth": true,
               "source": {
-                "x": 1472,
-                "y": 524
+                "id": "5281bde4-dfcc-47a5-a0a1-bdfa39bb5e7b"
               },
               "target": {
-                "x": 1470,
-                "y": 522
+                "id": "eedf90b7-2ad8-4ac8-9da3-9ce85c06978e"
               },
               "vertices": [
                 {
-                  "x": 1120,
-                  "y": 546
-                },
-                {
-                  "x": 1113,
-                  "y": 559
-                },
-                {
-                  "x": 1103,
-                  "y": 805
-                },
-                {
-                  "x": 1077,
-                  "y": 1030
-                },
-                {
-                  "x": 1433,
-                  "y": 999
+                  "x": 766,
+                  "y": 155
                 }
               ],
-              "id": "48d967cf-7e62-407e-ba72-179ec184983b",
-              "z": 41,
+              "id": "002b5143-0d85-42b1-872b-693fb73ab399",
               "labels": [
                 {
                   "position": 0.5,
                   "attrs": {
                     "text": {
-                      "text": "external service",
+                      "text": "audit",
                       "font-weight": "400",
                       "font-size": "small"
                     }
                   }
                 }
               ],
-              "attrs": {}
+              "z": 42,
+              "hasOpenThreats": false,
+              "threats": [
+                {
+                  "ruleId": "4adaa48a-0345-4533-a189-64c98c4420dd",
+                  "title": "Generic tampering threat",
+                  "type": "Tampering",
+                  "modelType": "STRIDE",
+                  "status": "Mitigated",
+                  "severity": "Medium",
+                  "description": "run script in log file",
+                  "mitigation": "Escape Character and make sure it s only a string saved in the log-file",
+                  "threatId": "713fbfde-dd92-4530-9a94-9862497c4747"
+                }
+              ],
+              "attrs": {
+                ".marker-target": {
+                  "class": "marker-target hasNoOpenThreats isInScope"
+                },
+                ".connection": {
+                  "class": "connection hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Process",
+              "size": {
+                "width": 100,
+                "height": 100
+              },
+              "position": {
+                "x": 690,
+                "y": 210
+              },
+              "angle": 0,
+              "id": "5281bde4-dfcc-47a5-a0a1-bdfa39bb5e7b",
+              "z": 43,
+              "hasOpenThreats": false,
+              "threats": [
+                {
+                  "ruleId": "87bc37e2-798e-4d68-bb96-feb1da26da48",
+                  "title": "Generic repudiation threat",
+                  "type": "Repudiation",
+                  "modelType": "STRIDE",
+                  "status": "Mitigated",
+                  "severity": "Medium",
+                  "description": "A generic repudiation threat",
+                  "mitigation": "",
+                  "threatId": "656a53f5-acaa-4d6c-880d-cd023754fb0d"
+                }
+              ],
+              "attrs": {
+                ".element-shape": {
+                  "class": "element-shape hasNoOpenThreats isInScope"
+                },
+                "text": {
+                  "text": "SIEM"
+                },
+                ".element-text": {
+                  "class": "element-text hasNoOpenThreats isInScope"
+                }
+              }
             },
             {
               "type": "tm.Flow",
@@ -1361,62 +1198,132 @@
                 "id": "c11ece4f-1739-4d8a-9cdd-a1494d5b7796"
               },
               "target": {
-                "id": "eedf90b7-2ad8-4ac8-9da3-9ce85c06978e"
+                "id": "5281bde4-dfcc-47a5-a0a1-bdfa39bb5e7b"
               },
               "vertices": [
                 {
-                  "x": 777,
-                  "y": 139
+                  "x": 775,
+                  "y": 350
                 }
               ],
-              "id": "be578d92-b4a3-4869-883d-b9e5c0bbfda5",
+              "id": "6a488168-8bfd-47f0-bd86-32b72a2cde5e",
               "labels": [
                 {
-                  "position": {
-                    "distance": 0.38083515103874094,
-                    "offset": 37.04042420930032
-                  },
+                  "position": 0.5,
                   "attrs": {
                     "text": {
-                      "text": "audit",
+                      "text": "flow 26",
                       "font-weight": "400",
                       "font-size": "small"
                     }
                   }
                 }
               ],
-              "z": 42,
-              "hasOpenThreats": true,
-              "threats": [
-                {
-                  "ruleId": "4adaa48a-0345-4533-a189-64c98c4420dd",
-                  "title": "Generic tampering threat",
-                  "type": "Tampering",
-                  "modelType": "STRIDE",
-                  "status": "Open",
-                  "severity": "Medium",
-                  "description": "A generic tampering threat",
-                  "mitigation": "Mitigation or prevention for the threat",
-                  "threatId": "c0aeacf5-b20e-4ecc-84e9-9be84926cb0c"
-                },
-                {
-                  "ruleId": "edb05d76-a695-455f-947b-7d67b78bc31d",
-                  "title": "Generic DoS threat",
-                  "type": "Denial of service",
-                  "modelType": "STRIDE",
-                  "status": "Open",
-                  "severity": "Medium",
-                  "description": "A generic DoS threat",
-                  "mitigation": "Mitigation or prevention for the threat",
-                  "threatId": "ab970a42-582b-49b8-8e4a-5c4fca91458b"
-                }
-              ],
+              "z": 44,
+              "hasOpenThreats": false,
               "attrs": {
                 ".marker-target": {
-                  "class": "marker-target hasOpenThreats isInScope"
+                  "class": "marker-target hasNoOpenThreats isInScope"
                 },
                 ".connection": {
-                  "class": "connection hasOpenThreats isInScope"
+                  "class": "connection hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Flow",
+              "size": {
+                "width": 10,
+                "height": 10
+              },
+              "smooth": true,
+              "source": {
+                "id": "5281bde4-dfcc-47a5-a0a1-bdfa39bb5e7b"
+              },
+              "target": {
+                "id": "c11ece4f-1739-4d8a-9cdd-a1494d5b7796"
+              },
+              "vertices": [
+                {
+                  "x": 714,
+                  "y": 349
+                }
+              ],
+              "id": "c2a3e63e-0c2f-47ec-bf8a-0574d98a41ec",
+              "labels": [
+                {
+                  "position": 0.5,
+                  "attrs": {
+                    "text": {
+                      "text": "flow 27",
+                      "font-weight": "400",
+                      "font-size": "small"
+                    }
+                  }
+                }
+              ],
+              "z": 45,
+              "hasOpenThreats": false,
+              "attrs": {
+                ".marker-target": {
+                  "class": "marker-target hasNoOpenThreats isInScope"
+                },
+                ".connection": {
+                  "class": "connection hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Flow",
+              "size": {
+                "width": 10,
+                "height": 10
+              },
+              "smooth": true,
+              "source": {
+                "id": "7b127dca-1f67-42b6-bcd4-6972c55aa6b0"
+              },
+              "target": {
+                "id": "685b5e05-705a-4548-81c6-125e74f4fc85"
+              },
+              "vertices": [
+                {
+                  "x": 592,
+                  "y": 560
+                },
+                {
+                  "x": 550,
+                  "y": 483
+                },
+                {
+                  "x": 480,
+                  "y": 398
+                }
+              ],
+              "id": "5a277906-b38f-44d2-a430-fb9926972e03",
+              "labels": [
+                {
+                  "position": {
+                    "distance": 0.733921948136971,
+                    "offset": 2.2437728954516745
+                  },
+                  "attrs": {
+                    "text": {
+                      "text": "OTT",
+                      "font-weight": "400",
+                      "font-size": "small"
+                    }
+                  }
+                }
+              ],
+              "z": 46,
+              "hasOpenThreats": false,
+              "attrs": {
+                ".marker-target": {
+                  "class": "marker-target hasNoOpenThreats isInScope"
+                },
+                ".connection": {
+                  "class": "connection hasNoOpenThreats isInScope"
                 }
               }
             }
